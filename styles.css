@@ -1,74 +1,77 @@
-/* General styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
+    background-color: #fafafa; /* Light grey background similar to Instagram */
 }
 
-h2, h3 {
-    color: #333;
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the container */
 }
 
-form {
+h2 {
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Dark grey text color */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left; /* Align labels to the left */
+    color: #333; /* Dark grey text color */
 }
 
 input[type="text"],
-input[type="password"],
-textarea,
-select {
+input[type="password"] {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
 }
 
-input[type="submit"],
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0; /* Instagram blue color */
     border: none;
-    border-radius: 4px;
+    border-radius: 4px; /* Rounded corners */
+    color: #fff; /* White text color */
+    font-size: 16px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover,
-button:hover {
-    background-color: #0056b3;
+input[type="submit"]:hover {
+    background-color: #3278d8; /* Darker blue on hover */
 }
 
-/* Task styles */
-.task {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+p {
+    margin-top: 20px;
+    color: #999; /* Light grey text color */
 }
 
-.task p {
-    margin: 0;
+a {
+    color: #3897f0; /* Instagram blue color */
+    text-decoration: none;
 }
 
-.important {
-    color: red;
-    font-weight: bold;
-}
-
-/* Responsive styles */
-@media (max-width: 600px) {
-    input[type="text"],
-    input[type="password"],
-    textarea,
-    select {
-        width: 100%;
-    }
+a:hover {
+    text-decoration: underline;
 }
