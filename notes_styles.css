@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px; /* Add space between the two containers */
+}
+
+.notes-container,
+.tasks-container {
+    width: 100%;
+    max-width: 600px; /* Adjust the width of each container */
+    max-height: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notes-container h2,
+.tasks-container h3 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+textarea, select, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3278d8;
+}
+
+.tasks-container {
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.tasks-container::-webkit-scrollbar {
+    width: 4px; /* Adjust the width as needed */
+}
+
+.tasks-container::-webkit-scrollbar-track {
+    background: #f4f4f9;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+    background-color: #3897f0;
+    border-radius: 8px;
+    border: 2px solid #f4f4f9;
+}
+
+.tasks-container {
+    scrollbar-color: #3897f0 #f4f4f9;
+    scrollbar-width: thin;
+}
+
+.task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.task.important {
+    border-left: 4px solid #e74c3c;
+}
+
+.task p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+button {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3278d8;
+}
