@@ -6,7 +6,7 @@ A simple task manager application built with PHP and MySQL.
 
 - User authentication (registration and login)
 - Add tasks with priority levels
-- Mark tasks as complete/incomplete
+- Update Tasks
 - Delete tasks
 
 ## Installation
@@ -18,4 +18,4 @@ A simple task manager application built with PHP and MySQL.
 
 1. Register a new user.
 2. Log in with your credentials.
-3. Add, complete, and delete tasks.
+3. Add, Update and delete tasks.
