@@ -19,13 +19,6 @@ function addTask($username, $task, $priority) {
     return $stmt->execute();
 }
 
-function markComplete($taskId) {
-    global $conn;
-    $stmt = $conn->prepare("UPDATE tasks SET completed = 1 WHERE id = ?");
-    $stmt->bind_param("i", $taskId);
-    return $stmt->execute();
-}
-
 function deleteTask($taskId) {
     global $conn;
     $stmt = $conn->prepare("DELETE FROM tasks WHERE id = ?");
