@@ -14,9 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         if ($stmt->execute()) {
             echo "Task added successfully!";
-            // Optionally, redirect or reload the page after adding task
-            // header('Location: notes.php');
-            // exit();
+            header('location: notes.php');
+            exit();
         } else {
             echo "Failed to add task.";
         }
